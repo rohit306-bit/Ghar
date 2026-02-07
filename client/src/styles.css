@@ -1,0 +1,305 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f5f6fb;
+  color: #14161f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #0e1222;
+  color: white;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.brand-icon {
+  font-size: 26px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-link {
+  border: none;
+  background: transparent;
+  color: white;
+  text-align: left;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.role-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.role-card h3 {
+  margin: 6px 0;
+}
+
+main {
+  padding: 28px 40px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.topbar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.content {
+  margin-top: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.mini-card {
+  background: #f5f7ff;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.mini-card h4 {
+  margin: 0 0 8px;
+}
+
+.timeline {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.timeline div {
+  background: #f5f7ff;
+  padding: 12px 16px;
+  border-radius: 12px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.stat-grid strong {
+  font-size: 20px;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #f8f9fd;
+  border-radius: 12px;
+}
+
+.badge {
+  background: #14161f;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.form input,
+.form select,
+.form button,
+.login-panel input,
+.login-panel button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d3d8e5;
+  font-size: 14px;
+}
+
+.form button,
+.login-panel button {
+  background: #14161f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.login-panel {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.login-panel label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.session-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.session-info .secondary {
+  background: transparent;
+  border: 1px solid #d3d8e5;
+  color: #14161f;
+}
+
+.table {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(5, 1fr);
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f8f9fd;
+}
+
+.table-row.header {
+  background: #14161f;
+  color: white;
+  font-weight: 600;
+}
+
+.table-row span {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row small {
+  opacity: 0.6;
+}
+
+.order-box {
+  display: grid;
+  gap: 12px;
+  background: #f8f9fd;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.empty {
+  color: #5f667a;
+}
+
+.status {
+  font-size: 13px;
+  color: #274690;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  color: #6c748a;
+}
